@@ -3,4 +3,4 @@
 Pressing any key to exit the screen
 Click any mouse button to clear the screen
 The __circle.txt__ file contains the value of *radius* and *width* of the circle that display at the mouse position (default is *10 10* -> **10 radius** and **10 width**)
-the __color.txt__ file will contains the list of color of the circle
+The __color.txt__ file will contains the list of color of the circle (default is the rainbow color)
