@@ -1,4 +1,3 @@
-import socket
 import pygame
 import sys
 import threading
@@ -15,14 +14,6 @@ filename = "screen.exe"
 colorfile = "color.txt"
 circlefile = "circle.txt"
 notification = ToastNotifier()
-
-host = "192.168.1.75"
-port = 4000
-try:
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.connect((host, port))
-except:
-    messagebox.showerror("Screen", f"Couldn't connect to {host}:{port} please trry again later")
 
 title = "Boring screen"
 
